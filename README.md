@@ -58,8 +58,6 @@ LRUCacheSimulator/
 │   ├── CacheStats.java
 │   ├── Simulator.java
 │   └── Main.java
-├── test/
-│   └── LRUCacheTest.java
 └── README.md
 ```
 
