@@ -44,7 +44,6 @@ head <-> [MRU] <-> [ ... ] <-> [LRU] <-> tail
 - Statistics: hits, misses, evictions, hit ratio
 - Console menu with input validation and exception handling
 - Simulation mode with an 80/20 "hot data" request pattern
-- JUnit 5 tests
 
 ---
 
@@ -78,7 +77,6 @@ java -cp src Main
 
 1. Create a Java project and add the files from `src/`.
 2. Run `Main.java`.
-3. To run tests, add `test/` as a test source root, add JUnit 5 to the classpath, and run `LRUCacheTest`.
 
 ---
 
@@ -137,18 +135,9 @@ Hits: 812 | Misses: 188 | Evictions: 178 | Hit Ratio: 81.20%
 
 ---
 
-## Testing
-
-JUnit 5 tests cover:
-
-- Eviction of the least recently used item
-- Updating an existing key
-- Invalid capacity (throws `IllegalArgumentException`)
-
----
-
 ## Future Improvements
 
+- JUnit test cases for eviction, update, and edge cases
 - FIFO cache and an LRU vs FIFO hit ratio comparison
 - LFU (Least Frequently Used) cache
 - Thread safety using `ReentrantLock` or `ReadWriteLock`
@@ -157,8 +146,6 @@ JUnit 5 tests cover:
 - Swing / JavaFX user interface
 
 ---
-
-## Author
 
 **Kunal Tambe**
 Pune, Maharashtra | tambe.k2004@gmail.com
